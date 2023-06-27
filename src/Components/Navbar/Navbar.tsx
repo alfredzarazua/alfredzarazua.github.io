@@ -1,7 +1,7 @@
 const Navbar = () => {
     return(
         <>
-            <span>Hello world</span>
+            <span>Hello worldddd</span>
         </>
     );
 
