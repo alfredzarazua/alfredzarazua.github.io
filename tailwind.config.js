@@ -13,12 +13,17 @@ export default {
         "text-hd-gray": "#E2E8F0",
         "text-bold-gray": "#64748B",
         "text-high-green": "#5EEAD4",
-        "light-blue": "#02c8db"
+        "light-blue": "#02c8db",
+        "crystal-lake":"#10D3FCEE",
+        "green-gray":"#CCD6F6",
+        "semi-dark-bg":"#112240"
       },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif']
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
-      
     },
     fontSize: {
       sm: ['14px', '20px'],
