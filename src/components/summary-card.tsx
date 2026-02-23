@@ -1,27 +1,28 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import { CardContent, CardFooter } from "./ui/card";
 
 interface Props {
   title: string;
   description: string;
-  dates: string;
-  location: string;
+  dates: string;  
   image?: string;
   links?: readonly {
     icon: React.ReactNode;
-    title: string;
+    type: string;
     href: string;
   }[];
+  technologies: readonly string[]
 }
 
-export function HackathonCard({
+export function SummaryCard({
   title,
   description,
-  dates,
-  location,
+  dates,  
   image,
   links,
+  technologies
 }: Props) {
   return (
     <li className="relative ml-10 py-4">
@@ -36,27 +37,41 @@ export function HackathonCard({
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
-        {location && (
-          <p className="text-sm text-muted-foreground">{location}</p>
-        )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">
             {description}
           </span>
         )}
-      </div>
-      {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
-                {link.icon}
-                {link.title}
+      </div>      
+      <CardContent className="mt-auto flex flex-col">
+        {technologies && technologies.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {technologies?.map((t) => (
+              <Badge
+                className="px-1 py-0 text-[10px]"
+                variant="outline"
+                key={t}
+              >
+                {t}
               </Badge>
-            </Link>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        )}
+      </CardContent>
+      <CardFooter className="pb-2">
+        {links && links.length > 0 && (
+          <div className="flex flex-row flex-wrap items-start gap-1">
+            {links?.map((link, idx) => (
+              <Link href={link?.href} key={idx} target="_blank">
+                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                  {link.icon}
+                  {link.type}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        )}
+      </CardFooter>
     </li>
   );
 }
