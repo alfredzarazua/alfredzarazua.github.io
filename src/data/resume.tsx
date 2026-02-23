@@ -152,7 +152,7 @@ export const DATA = {
     },
     {
       title: "Warehouse Management System",
-      href: "/get-in-touch",
+      href: "#",
       dates: "Jan 2024 - Jan 2025",
       active: true,
       description:
@@ -176,7 +176,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/alfredzarazua/sesat",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -192,7 +192,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/alfredzarazua/sesat",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -208,7 +208,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/alfredzarazua/sesat",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -224,7 +224,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/alfredzarazua/sesat",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -240,7 +240,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/alfredzarazua/sesat",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
