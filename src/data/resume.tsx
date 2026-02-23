@@ -71,7 +71,7 @@ export const DATA = {
       start: "Jan 2024",
       end: "Current",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Collaborated in the design and development of a desktop Warehouse Management System (WMS), supporting core logistics, inventory tracking, and operational workflows. Contributed to the development of a customer-facing web application, improving client access, data visibility, and overall user experience. Owned production deployments across desktop, web, and API services, including release planning, scheduling, and risk mitigation to ensure minimal downtime and safe rollouts.Developed and maintained RESTful APIs in ASP.NET Core, supporting internal services and external client applications.",
     },
     {
       company: "Reis",
@@ -83,7 +83,7 @@ export const DATA = {
       start: "Oct 2023",
       end: "Jan 2024",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Collaborated with other developers to refine software design and implementation. Analyzed customer needs to create and implement appropriate solutions. Automated the extraction and processing of large datasets from legacy systems using Python and SQL scripts.",
     },
     {
       company: "UASLP",
