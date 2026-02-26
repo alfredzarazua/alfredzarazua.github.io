@@ -172,7 +172,7 @@ export const DATA = {
         "A web application to manage and track the complete evaluation lifecycle for Master's and PhD candidates. Maintains an auditable history of thesis submissions, reviews, committee decisions, and attached documents. Features a shared calendar for scheduling defenses, supervision meetings, and deadlines with configurable notifications and role-based access for students, advisors, and committee members. Includes search, filtering, and export tools to support progress monitoring and institutional reporting.",
       icon: "public",
       technologies: ["NextJS", "NestJS", "PostgreSQL", "TypeScript", "Tailwind CSS"],
-      image: "/img/sesat.png",
+      image: "/sesat.png",
       links: [
         {
           type: "Source",
@@ -188,7 +188,7 @@ export const DATA = {
         "A two step compiler made with ANTLR tool. Designed for SIC/XE architecture. SIC uses a special assembly language with its own operation codes that hold the hex values needed to assemble and execute programs. This compiler allows you to edit your source code, analyze it lexically and syntactically, and finally translate it into binary, it also generates data such as addressing modes, program counter, instruction format, etc. Also includes a Linker and Loader, it is useful to emulate the execution of your program and see the memory usage",
       icon: "public",
       technologies: ["C#", ".NET Framework", "ANTLR", "Windows Forms", "NuGet"],
-      image: "/img/compiler.png",
+      image: "/compiler.png",
       links: [
         {
           type: "Source",
@@ -203,7 +203,7 @@ export const DATA = {
       description:
         "GUI tool to filter audio frequencies from a live recording. The tool includes: High-pass filter, Low-pass filter and Band-pass filter. Made in Python using Tkinter and Audio processing libraries.",
       icon: "public",
-      image: "/img/audio_filter.png",
+      image: "/audio_filter.png",
       technologies: ["Python", "Tkinter", "Waveio", "MathPlot"],
       links: [
         {
@@ -219,7 +219,7 @@ export const DATA = {
       description:
         "The classic UNO game made with JAVA FX. This first version supports one room with up to four players online, you can use Discord to chat with your friends while play UNO. Just login or register to play. I collaborated with other students to develop this project.",
       icon: "public",
-      image: "/img/uno-b.png",
+      image: "/uno-b.png",
       technologies: ["JAVA", "JavaFX", "MySQL", "Multi-threading", "Sockets"],
       links: [
         {
@@ -235,7 +235,7 @@ export const DATA = {
       description:
         "This game looks like chess, but you only have horses, the challenge is to fill the board before you run out of moves or your horse gets stuck in a place where it can't move",
       icon: "public",
-      image: "horse-game.png",
+      image: "/horse-game.jpg",
       technologies: ["Kotlin", "Android Studio", "XML", "Android"],
       links: [
         {

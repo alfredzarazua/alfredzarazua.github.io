@@ -178,7 +178,6 @@ export default function Page() {
                     title={project.title}
                     description={project.description}                    
                     dates={project.dates}
-                    image={project.image}
                     links={project.links}
                     technologies={project.technologies}
                   />

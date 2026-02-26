@@ -1,13 +1,13 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { CardContent, CardFooter } from "./ui/card";
+import { generateSlug } from "@/lib/utils";
 
 interface Props {
   title: string;
   description: string;
-  dates: string;  
-  image?: string;
+  dates: string;
   links?: readonly {
     icon: React.ReactNode;
     type: string;
@@ -19,8 +19,7 @@ interface Props {
 export function SummaryCard({
   title,
   description,
-  dates,  
-  image,
+  dates,
   links,
   technologies
 }: Props) {
@@ -28,7 +27,6 @@ export function SummaryCard({
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
         <Avatar className="border size-12 m-auto">
-          <AvatarImage src={image} alt={title} className="object-contain" />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
@@ -58,7 +56,12 @@ export function SummaryCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="pb-2">
+      <CardFooter className="pb-2 gap-2 flex-wrap">
+        <Link href={`/academic-projects/${generateSlug(title)}`}>
+          <Badge className="flex gap-2 px-2 py-1 text-[10px] cursor-pointer hover:shadow-md transition-shadow">
+            View Details
+          </Badge>
+        </Link>
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
