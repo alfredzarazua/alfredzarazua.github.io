@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
-import { link } from "fs";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Alfredo Zarazua",
@@ -9,25 +8,31 @@ export const DATA = {
   location: "San Luis Potosi, Mexico",
   locationLink: "https://www.google.com/maps/place/sanluispotosi",
   description:
-    "Computer engineer focused on designing scalable systems that improve processes and empower teams.",
+    "Backend Software Engineer focused on scalable .NET applications, API design, data consistency, and SQL Server performance.",
   summary:
-    "Full Stack Software Developer specializing in C# and the .NET platform, with over 2 years of professional experience building and maintaining production systems. Experienced in taking ownership of complex features and infrastructure responsibilities, improving user experience, optimizing database performance, and delivering secure, reliable solutions through close collaboration with cross-functional teams.",
+    "Backend Software Engineer with 2+ years of experience designing and operating production-grade Warehouse Management Systems (WMS) using .NET and SQL Server. Currently acting as technical lead, driving architecture decisions, coordinating a team of 4 developers, and owning end-to-end delivery across desktop, web, and API platforms. Specialized in transactional systems with strong data consistency guarantees, high-volume SQL performance optimization, and migration of legacy applications to scalable service-based architectures. Experienced in multi-tenant systems, authentication with OAuth 2.0 / OpenID Connect, and production operations including deployments and release management.",
   avatarUrl: "/propic.jpg",
   skills: [
     "C#",
-    "ASP.Net Core",    
-    "Python",
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
+    ".NET",
+    "ASP.NET Core",
     "SQL Server",
-    "Docker",
-    "TSQL",
-    "Kotlin",
-    "Android Development",
-    "Restful APIs",
-    "Authentication & Authorization",
+    "Indexing",
+    "Query Optimization",
+    "REST APIs",
+    "Distributed Systems",
+    "Stored Procedures",
+    "Concurrency Handling",
+    "OAuth 2.0",
+    "OpenID Connect",
+    "JWT",
+    "CI/CD",
+    "GitHub Actions",
+    "IIS",
+    "Production Deployments",
+    "Python",
+    "Git",
+    "GitHub",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },    
@@ -66,30 +71,30 @@ export const DATA = {
       href: "https://www.reislogistica.com/",
       badges: [],
       location: "Remote",
-      title: "Software Developer",
+      title: "Software Engineer (Acting Technical Lead)",
       logoUrl: "/logo-blue.png",
       start: "Jan 2024",
-      end: "Current",
+      end: "Present",
       description:
-        "Collaborated in the design and development of a desktop Warehouse Management System (WMS), supporting core logistics, inventory tracking, and operational workflows. Contributed to the development of a customer-facing web application, improving client access, data visibility, and overall user experience. Owned production deployments across desktop, web, and API services, including release planning, scheduling, and risk mitigation to ensure minimal downtime and safe rollouts.Developed and maintained RESTful APIs in ASP.NET Core, supporting internal services and external client applications.",
+        "Led architecture and technical decision-making for a multi-tenant Warehouse Management System (WMS), supporting multiple clients within a shared platform while maintaining data isolation and performance. Coordinated and mentored a team of 4 developers through code reviews, implementation guidance, and support for junior engineers. Owned end-to-end delivery across desktop Windows Forms, web, and API platforms, including requirements definition, development, production deployment, release cycles, and rollback strategies. Led the technical integration with Oracle NetSuite using the SuiteTalk REST API, enabling synchronization of customers, orders, and customer estimates used for monthly billing calculations based on WMS inventory data. Designed synchronization workflows, error handling, and data validation strategies to preserve consistency under real-world failure scenarios. Designed and implemented ASP.NET Core REST APIs for transactional inventory workflows, implemented stored procedures for atomic multi-step operations under concurrent usage, migrated legacy SQL-based architecture toward a service-oriented API model, deployed centralized OAuth 2.0 / OpenID Connect authentication, optimized high-volume SQL Server operations through indexing, query refactoring, and execution plan analysis, and developed an Android barcode scanning application for real-time inventory updates.",
     },
     {
       company: "Reis",
       badges: [],
       href: "https://www.reislogistica.com/",
       location: "Remote",
-      title: "Software Developer Intern",
+      title: "Programmer Analyst Intern",
       logoUrl: "/logo-blue.png",
       start: "Oct 2023",
       end: "Jan 2024",
       description:
-        "Collaborated with other developers to refine software design and implementation. Analyzed customer needs to create and implement appropriate solutions. Automated the extraction and processing of large datasets from legacy systems using Python and SQL scripts.",
+        "Developed Python and SQL scripts to extract, transform, and process large datasets from legacy systems. Designed validation logic to detect and correct inconsistent data, ensuring integrity during migration processes. Collaborated with the engineering team to refine requirements and support feature implementation.",
     },
     {
       company: "UASLP",
       href: "https://www.uaslp.mx/",
       badges: [],
-      location: "San Luis Potosi, Mexico",
+      location: "San Luis Potosí, Mexico",
       title: "Mandatory social service",
       logoUrl: "/uaslp-logo.png",
       start: "January 2023",
@@ -100,12 +105,12 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Autonoma University of San Luis Potosi",
+      school: "Universidad Autónoma de San Luis Potosí",
       href: "https://www.uaslp.mx/",
-      degree: "Computer Engineering",
+      degree: "Bachelor of Science in Computer Engineering",
       logoUrl: "/uaslp-logo.png",
-      start: "2018",
-      end: "2023",
+      start: "Aug 2018",
+      end: "Dec 2023",
     },
   ],
   projects: [
@@ -115,7 +120,7 @@ export const DATA = {
       dates: "Jul 2025 - Sept 2025",
       active: true,
       description:
-        "A lightweight yet robust Android application designed to streamline the validation of long serial numbers in warehouse environments. Built with a focus on security, accuracy, and seamless integration, the app empowers users to scan and verify data using either the device camera or Android based handhelds with laser scanners.",
+        "Android barcode scanning app for warehouse workflows, supporting camera and handheld laser scanner input for faster serial number validation and inventory updates.",
       technologies: ["kotlin", "Android", "Camera API", "XML"],
       image: "/app-views.png",
       video: "",
@@ -126,8 +131,9 @@ export const DATA = {
       href: "#",
       dates: "March 2025 - Jul 2025",
       active: true,
-      description: "Authentication and authorization platform based on OAuth 2.0 and OpenId connect, enabling centralized identity management for multiple client applications. The solution supports interactive web logins, API access control, secure logout flows, and multilingual user interfaces. The system separates authentication from application logic, allowing developers to integrate robust security features without handling sensitive user credentials directly.",
-      technologies: ["C#", "ASP.Net Core", "OAuth 2.0 / OpenId Connect", "ASP.Net Core Identity", "Policy-based authorization", "IdentityServer", "SQL Server", "CBA & TBA", "DaisyUI", "Tailwind CSS"],
+      description:
+        "Centralized OAuth 2.0 / OpenID Connect platform for securing web applications and APIs with shared login, access control, logout flows, and multilingual UI support.",
+      technologies: ["C#", "ASP.NET Core", "OAuth 2.0 / OpenID Connect", "ASP.NET Core Identity", "Policy-based authorization", "IdentityServer", "SQL Server", "DaisyUI", "Tailwind CSS"],
       image: "/security.svg",
       video: "",
       links: [],
@@ -138,8 +144,8 @@ export const DATA = {
       dates: "March 2024 - Jun 2024",
       active: true,
       description:
-        "A custom-built web application designed to provide customers with secure, real-time access to inventory data. Seamlessly integrated with the Warehouse Management System (WMS), the portal enables users to view and download up-to-date inventory reports. Filtering tools included to allow for intuitive search and review of shipment and receipt orders, streamlining logistics visibility and decision-making. The [platform](https://reisbl.com) also supports multiple languages, ensuring accessibility for a diverse user base and enhancing international usability.",
-      technologies: ["C#", "ASP.Net Core", "Entity Framework Core", "SQL Server", "Razor", "DaisyUI", "Tailwind CSS"],
+        "Customer-facing portal integrated with the WMS to provide secure inventory visibility, filtering, report downloads, and multilingual access for logistics users.",
+      technologies: ["C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "Razor", "DaisyUI", "Tailwind CSS"],
       image: "/website-view.png",
       video: "",
       links: [
@@ -153,11 +159,11 @@ export const DATA = {
     {
       title: "Warehouse Management System",
       href: "#",
-      dates: "Jan 2024 - Jan 2025",
+      dates: "Jan 2024 - Present",
       active: true,
       description:
-        "A robust desktop application designed to streamline core warehouse operations. It enables users to register merchandise receipts and generate legally compliant documentation, as well as validate and track outbound shipments. Integrated to [Oracle Netsuite](https://netsuite.com) ERP. The system offers real-time inventory reporting with advanced filtering capabilities for complex queries, supporting fast data retrieval. Automated document generation and material tag printing. Support for multiple inventory transaction types (e.g., transfers, adjustments, returns). Optimized for performance and scalability in high-volume environments.",
-      technologies: ["C#", ".NET", "Windows Forms", "SQL", "RDLC", "Async/Await Tasks"],
+        "Production WMS for receipts, outbound validation, inventory reporting, document generation, NetSuite synchronization, and high-volume transactional warehouse operations.",
+      technologies: ["C#", ".NET", "ASP.NET Core", "Windows Forms", "SQL Server", "Stored Procedures", "Oracle NetSuite", "SuiteTalk REST API", "OAuth 2.0", "OpenID Connect", "IIS"],
       image: "/wms.png",
       video: "",
       links: [],
@@ -166,12 +172,12 @@ export const DATA = {
   ],
   academicProjects: [
     {
-      title: "SESAT",
+      title: "SESAT - Academic Evaluation System",
       dates: "Jan - Nov, 2023",      
       description:
-        "A web application to manage and track the complete evaluation lifecycle for Master's and PhD candidates. Maintains an auditable history of thesis submissions, reviews, committee decisions, and attached documents. Features a shared calendar for scheduling defenses, supervision meetings, and deadlines with configurable notifications and role-based access for students, advisors, and committee members. Includes search, filtering, and export tools to support progress monitoring and institutional reporting.",
+        "Full-stack academic evaluation platform for tracking thesis submissions, reviews, committee decisions, schedules, and role-based workflows.",
       icon: "public",
-      technologies: ["NextJS", "NestJS", "PostgreSQL", "TypeScript", "Tailwind CSS"],
+      technologies: ["TypeScript", "Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
       image: "/sesat.png",
       links: [
         {
@@ -185,14 +191,14 @@ export const DATA = {
       title: "Assembly Language Compiler",
       dates: "Jan - June, 2022",      
       description:
-        "A two step compiler made with ANTLR tool. Designed for SIC/XE architecture. SIC uses a special assembly language with its own operation codes that hold the hex values needed to assemble and execute programs. This compiler allows you to edit your source code, analyze it lexically and syntactically, and finally translate it into binary, it also generates data such as addressing modes, program counter, instruction format, etc. Also includes a Linker and Loader, it is useful to emulate the execution of your program and see the memory usage",
+        "Built a two-pass compiler for SIC/XE architecture using ANTLR, including parsing, error detection, and memory simulation.",
       icon: "public",
-      technologies: ["C#", ".NET Framework", "ANTLR", "Windows Forms", "NuGet"],
+      technologies: ["C#", ".NET", "ANTLR", "Windows Forms"],
       image: "/compiler.png",
       links: [
         {
           type: "Source",
-          href: "#",
+          href: "https://github.com/alfredzarazua/sicxe-compiler",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -201,7 +207,7 @@ export const DATA = {
       title: "Audio filtering tool",
       dates: "Aug - Dec, 2022",      
       description:
-        "GUI tool to filter audio frequencies from a live recording. The tool includes: High-pass filter, Low-pass filter and Band-pass filter. Made in Python using Tkinter and Audio processing libraries.",
+        "Desktop GUI for recording audio and applying high-pass, low-pass, and band-pass filters using Python audio processing libraries.",
       icon: "public",
       image: "/audio_filter.png",
       technologies: ["Python", "Tkinter", "Waveio", "MathPlot"],
@@ -217,7 +223,7 @@ export const DATA = {
       title: "Uno Game",
       dates: "Jan - June, 2023",      
       description:
-        "The classic UNO game made with JAVA FX. This first version supports one room with up to four players online, you can use Discord to chat with your friends while play UNO. Just login or register to play. I collaborated with other students to develop this project.",
+        "Online multiplayer UNO game built with JavaFX, sockets, threading, authentication, and MySQL persistence for up to four players.",
       icon: "public",
       image: "/uno-b.png",
       technologies: ["JAVA", "JavaFX", "MySQL", "Multi-threading", "Sockets"],
@@ -233,7 +239,7 @@ export const DATA = {
       title: "Horse challenge",
       dates: "Jun - Aug, 2023",      
       description:
-        "This game looks like chess, but you only have horses, the challenge is to fill the board before you run out of moves or your horse gets stuck in a place where it can't move",
+        "Android puzzle game based on knight movement, challenging players to cover the board before running out of valid moves.",
       icon: "public",
       image: "/horse-game.jpg",
       technologies: ["Kotlin", "Android Studio", "XML", "Android"],

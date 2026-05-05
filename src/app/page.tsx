@@ -198,14 +198,14 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Feel free to {" "}
+                Open to backend engineering roles, collaborations, and technical discussions. {" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  send a direct message
+                  Send me a direct message
                 </Link>{" "}
-                on LinkedIn for inquiries, collaborations, or technical discussions.
+                on LinkedIn.
               </p>
             </div>
           </BlurFade>
