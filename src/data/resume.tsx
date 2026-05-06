@@ -8,9 +8,8 @@ export const DATA = {
   location: "San Luis Potosi, Mexico",
   locationLink: "https://www.google.com/maps/place/sanluispotosi",
   description:
-    "Backend Software Engineer focused on scalable .NET applications, API design, data consistency, and SQL Server performance.",
-  summary:
-    "Backend Software Engineer with 2+ years of experience designing and operating production-grade Warehouse Management Systems (WMS) using .NET and SQL Server. Currently acting as technical lead, driving architecture decisions, coordinating a team of 4 developers, and owning end-to-end delivery across desktop, web, and API platforms. Specialized in transactional systems with strong data consistency guarantees, high-volume SQL performance optimization, and migration of legacy applications to scalable service-based architectures. Experienced in multi-tenant systems, authentication with OAuth 2.0 / OpenID Connect, and production operations including deployments and release management.",
+    "Backend Software Engineer. I enjoy turning complex business workflows into reliable production systems.",
+  summary:"With 2+ years of experience, I build production .NET applications, REST APIs, and SQL Server-backed systems. My work focuses on reliable transactional workflows, data consistency, performance optimization, and service-oriented architecture. Recently, I have also taken technical lead responsibilities, coordinating delivery across desktop, web, and API platforms.",
   avatarUrl: "/propic.jpg",
   skills: [
     "C#",
